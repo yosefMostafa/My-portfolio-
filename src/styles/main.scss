@@ -1,0 +1,53 @@
+@use 'variables';
+
+body {
+  font-family: 'Arial, sans-serif';
+  margin: 0; padding: 0;
+  background: var(--body-color);
+  color: #222;
+}
+
+footer {
+  background: var(--background-color);
+  color: #fff;
+  padding: 1rem;
+  height: 10vh;
+  width: 100vw;
+//   align-items: center;
+//   justify-content: center;
+//   display: flex;
+
+}
+
+
+body, html {
+    font-family: VAR(--font-family);
+    .-webkit-scrollbar{
+         display: none;
+    }
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #aad;
+  text-decoration: none;
+  &:hover { color: #fff; }
+}
+
+.projects {
+  padding: 2rem;
+  .project {
+    margin-bottom: 1.5rem;
+    h2 { margin: 0 0 .5rem; }
+    p { margin: 0; }
+  }
+}
+
