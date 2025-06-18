@@ -7,23 +7,27 @@
   align-items: center;
   justify-content: center;
   display: flex;
- 
+
   flex-direction: row;
-  background: radial-gradient(circle at 75% center, var(--middle-gradiendColor) 0%, var(--background-color) 20%,  var(--background-color) 100%);
+  background: radial-gradient(
+    circle at 75% center,
+    var(--middle-gradiendColor) 0%,
+    var(--background-color) 20%,
+    var(--background-color) 100%
+  );
   color: #fff;
   padding: 2rem;
-  
+
   text-align: center;
 
   .content {
     position: relative;
     text-align: left;
-width: 50vw;
+    width: 50vw;
     h1 {
       font-size: 7vw;
       font-weight: 400;
       margin: 0 0 1rem 0;
-    
     }
 
     span {
@@ -31,25 +35,24 @@ width: 50vw;
       line-height: 1.6;
       color: #e0e0e0;
       margin: 0;
-    display: inline-block;
-     vertical-align: baseline;
-
+      display: inline-block;
+      vertical-align: baseline;
     }
   }
-.header-image {
-  position: relative;
-    
- img {
-    width: 32vw;
-    max-width: 360px;
-    height: auto;
-    border-radius: 1.5rem;
-    background: transparent;
-    object-fit: contain;
-    display: block;
+  .header-image {
+    position: relative;
+
+    img {
+      width: 32vw;
+      max-width: 360px;
+      height: auto;
+      border-radius: 1.5rem;
+      background: transparent;
+      object-fit: contain;
+      display: block;
+    }
   }
-}
- 
+
   .header-curve {
     position: absolute;
     bottom: 0;
@@ -72,31 +75,14 @@ width: 50vw;
 @keyframes headerFadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(-80px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// .curved-header {
-//   animation: headerFadeInUp 2s cubic-bezier(0.23, 1, 0.32, 1) both;
-// }
-
-@keyframes curveReveal {
-  0% {
-    opacity: 0;
-    transform: scaleY(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scaleY(1);
   }
 }
 
 .site-header {
-  animation: headerFadeInUp 3s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: headerFadeInUp 3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 @keyframes textFadeIn {
@@ -124,13 +110,17 @@ width: 50vw;
   animation-delay: 1.03s;
 }
 
-
 @media (max-width: 1080px) {
   .site-header {
     flex-direction: column-reverse;
-  background: radial-gradient(circle at 50% center, var(--middle-gradiendColor) 0%, var(--background-color) 20%,  var(--background-color) 100%);
-
-    
+    background: radial-gradient(
+      circle at 50% center,
+      var(--middle-gradiendColor) 0%,
+      var(--background-color) 20%,
+      var(--background-color) 100%
+    );
+    width: 100vw;
+    padding: 0%;
     .img {
       max-width: 100%;
       text-align: center;
@@ -138,18 +128,18 @@ width: 50vw;
 
     .content {
       text-align: center;
-        padding: 1rem;
-        width: 80vw;
-    
-    .span {
+      padding: 1rem;
+      width: 80vw;
+
+      .span {
         font-size: 1rem;
-      line-height: 0;
-      color: #e0e0e0;
-      margin: 0;
-      width: 100px;
-      display: inline-block; // keeps animation per word
-      text-align: center;
-    }
+        line-height: 0;
+        color: #e0e0e0;
+        margin: 0;
+        width: 100px;
+        display: inline-block; // keeps animation per word
+        text-align: center;
+      }
     }
   }
 }

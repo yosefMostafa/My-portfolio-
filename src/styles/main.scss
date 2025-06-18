@@ -1,12 +1,5 @@
 @use 'variables';
 
-body {
-  font-family: 'Arial, sans-serif';
-  margin: 0; padding: 0;
-  background: var(--body-color);
-  color: #222;
-}
-
 footer {
   background: var(--background-color);
   color: #fff;
@@ -29,7 +22,6 @@ body, html {
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
-  width: 100vw;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -42,12 +34,4 @@ nav a {
   &:hover { color: #fff; }
 }
 
-.projects {
-  padding: 2rem;
-  .project {
-    margin-bottom: 1.5rem;
-    h2 { margin: 0 0 .5rem; }
-    p { margin: 0; }
-  }
-}
 
