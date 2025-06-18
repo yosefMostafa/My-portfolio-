@@ -62,12 +62,15 @@
     overflow: hidden;
     line-height: 0;
     z-index: 1;
-
+    height: 80px;
     svg {
       display: block;
       fill: var(--background-color);
       width: 100vw;
       height: 80px;
+      @media  (max-width: 600px) {
+        height: 50px;
+      }
     }
   }
 }

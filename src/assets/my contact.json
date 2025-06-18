@@ -1,0 +1,18 @@
+{
+    "contacts":[{
+         "name" :"github",
+        "url":"https://github.com/yosefMostafa",
+        "icon": "./social icons/github white.svg"
+    },{
+        "name": "gmail",
+        "url": "youssef.m.i.el.desoky@gmail.com",
+        "icon": "./social icons/gmail.svg"
+    },{
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/yosef-el-desoky/",
+        "icon": "./social icons/in.svg"
+    }]
+   
+    
+   
+}

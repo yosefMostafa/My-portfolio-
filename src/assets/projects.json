@@ -1,0 +1,111 @@
+[
+  {
+    "title": "Yumx - Food Ordering App",
+    "desc": "YumX is a mobile application designed to streamline the food ordering experience in a restaurant-like environment. It allows users to browse menus, place customized orders, and receive real-time updates—all through an intuitive and visually appealing interface.",
+    "images": [
+      "./yumx/banner.png",
+      "./yumx/chat.jpeg",
+      "./yumx/my orders 2.jpeg"
+    ],
+    "tech": [
+      "- Flutter & Dart ",
+      "- MVVM Architecture",
+      "- Next.js (API Layer)",
+      "- Firebase for push notifications",
+      "- RESTful APIs"
+    ],
+    "links": [
+      {
+        "name": "github",
+        "url": "https://github.com/YumX-Project/YumX-App",
+        "icon": "./social icons/github.svg"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/feed/update/urn:li:activity:7337169790559576064/",
+        "icon": "./social icons/in.svg"
+      },
+      {
+        "name": "google play",
+        "url": "https://play.google.com/store/apps/details?id=com.yumx.free.text",
+        "icon": "./social icons/play.svg"
+      }
+    ]
+  },
+  {
+    "title": "GameLive - eSports App",
+    "desc": "GameLive is a real-time mobile application built for eSports and gaming enthusiasts. It delivers up-to-date match scores, player stats, and game highlights directly to users, helping them stay connected with their favorite games and tournaments.",
+    "images": [
+      "./gamelive/Home Page.PNG", 
+      "./gamelive/Live.PNG",
+      "./gamelive/Upcoming.PNG"
+    ],
+    "tech": [
+      "- Flutter & Dart ",
+      "- RESTful APIs",
+      "- Streams for state management"
+      
+    ],
+     "links": [
+      {
+        "name": "github",
+        "url": "https://github.com/yosefMostafa/Game-Live",
+        "icon": "./social icons/github.svg"
+      },
+
+      {
+        "name": "google play",
+        "url": "https://play.google.com/store/apps/details?id=gamelive.v1",
+        "icon": "./social icons/play.svg"
+      }
+    ]
+  },
+  {
+    "title": "Yumx",
+    "desc": "YumX is a mobile application designed to streamline the food ordering experience in a restaurant-like environment. It allows users to browse menus, place customized orders, and receive real-time updates—all through an intuitive and visually appealing interface.",
+    "images": [
+      "./yumx/banner.png",
+      "./yumx/chat.jpeg",
+      "./yumx/my orders 2.jpeg"
+    ],
+    "tech": [
+      "Flutter & Dart ",
+      "MVVM Architecture",
+      "Next.js (API Layer)",
+      "Firebase for push notifications",
+      "RESTful APIs"
+    ]
+  },
+  {
+    "title": "Yumx",
+    "desc": "YumX is a mobile application designed to streamline the food ordering experience in a restaurant-like environment. It allows users to browse menus, place customized orders, and receive real-time updates—all through an intuitive and visually appealing interface.",
+    "images": [
+      "./yumx/banner.png",
+      "./yumx/chat.jpeg",
+      "./yumx/my orders 2.jpeg"
+    ],
+    "tech": [
+      "Flutter & Dart ",
+      "MVVM Architecture",
+      "Next.js (API Layer)",
+      "Firebase for push notifications",
+      "RESTful APIs"
+    ]
+  },
+  {
+    "title": "Yumx",
+    "desc": "YumX is a mobile application designed to streamline the food ordering experience in a restaurant-like environment. It allows users to browse menus, place customized orders, and receive real-time updates—all through an intuitive and visually appealing interface.",
+    "images": [
+      "./yumx/banner.png",
+      "./yumx/chat.jpeg",
+      "./yumx/my orders 2.jpeg"
+    ],
+    "tech": [
+      "Flutter & Dart ",
+      "MVVM Architecture",
+      "Next.js (API Layer)",
+      "Firebase for push notifications",
+      "RESTful APIs"
+    ]
+  }
+]

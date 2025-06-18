@@ -21,12 +21,13 @@
     padding: 2rem;
 
     .project-card {
+      overflow: hidden;
       background: var(--font-color);
       border-radius: 1rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
       text-align: center;
-      height: 40vh;
+      // height: 40vh;
       padding: 1rem;
       box-sizing: border-box;
 
@@ -39,17 +40,32 @@
         margin-bottom: 0.5rem;
         color: var(--background-color);
       }
-
+      .tech-title {
+        font-size: 1.5rem;
+        color: var(--background-color);
+        margin-bottom: 0.5rem;
+        text-align: start;
+      }
+      .links-row {
+        display: flex;
+        align-items: flex-start; /* Aligns items to the start vertically */
+        justify-content: flex-start; /* Aligns items to the start horizontally */
+        gap:1rem;
+        img {
+          width: 30px; /* Smaller icon size */
+          height: 30px;
+          object-fit: contain;
+          display: inline-block;
+        }
+        
+      }
       p {
         font-size: 1rem;
         color: var(--background-color);
         margin-bottom: 1rem;
+        text-align: justify;
       }
-      img {
-        height: 50%;
-        object-fit: contain;
-        border-radius: 0.5rem;
-      }
+
       a {
         text-decoration: none;
         color: var(--background-color);

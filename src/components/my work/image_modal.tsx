@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import "../../styles/image_modal.scss";
-import image from "../../assets/coding.png";
+type ImageModalProps = {
+  imageUrl: string;
+    open: boolean;
+    onClose?: () => void;
+};
+const ImageModalCustom = ({imageUrl, open, onClose}:ImageModalProps) => {
+  
 
-const ImageModalCustom = (imageUrl:string) => {
-  const [open, setOpen] = useState(true);
-
-  return open ? (
-    <div className="modal-backdrop" onClick={() => setOpen(false)}>
+  return open ? ReactDOM.createPortal(
+    <div className="modal-backdrop" onClick={() => onClose}>
+      <button className="close-button" onClick={onClose}>
+        &times;
+      </button>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <img src={image} />
+        <img src={imageUrl} />
       </div>
     </div>
+    ,
+     document.body //
   ) : null;
 };
 export default ImageModalCustom;
