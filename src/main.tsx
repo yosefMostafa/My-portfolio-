@@ -5,7 +5,7 @@ import App from './App.tsx'
 import { setTheme, getSavedTheme } from './styles/themes.ts';
 
 const saved = getSavedTheme();
-setTheme(saved || 'light'); // Default to 'light' if nothing is stored
+setTheme(saved || 'dark'); // Default to 'light' if nothing is stored
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
