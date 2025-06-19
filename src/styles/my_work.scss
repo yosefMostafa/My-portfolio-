@@ -14,22 +14,32 @@
 
     color: var(--background-color);
   }
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--background-color);
+  }
   .cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 2rem;
+    align-items: stretch;
 
     .project-card {
       overflow: hidden;
-      background: var(--font-color);
+      background: var(--card-color);
       border-radius: 1rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
       text-align: center;
-      // height: 40vh;
+       height: 100%;
       padding: 1rem;
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+
 
       &:hover {
         transform: translateY(-10px);
@@ -38,17 +48,17 @@
       h3 {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
-        color: var(--background-color);
+        color: var( --card-font-color);
       }
       .tech-title {
         font-size: 1.5rem;
-        color: var(--background-color);
+        color: var( --card-font-color);
         margin-bottom: 0.5rem;
         text-align: start;
       }
       .links-row {
+        margin-top: auto; // pushes it to the bottom
         display: flex;
-        align-items: flex-start; /* Aligns items to the start vertically */
         justify-content: flex-start; /* Aligns items to the start horizontally */
         gap:1rem;
         img {
@@ -61,14 +71,14 @@
       }
       p {
         font-size: 1rem;
-        color: var(--background-color);
+        color: var( --card-font-color);
         margin-bottom: 1rem;
         text-align: justify;
       }
 
       a {
         text-decoration: none;
-        color: var(--background-color);
+        color: var( --card-font-color);
         font-weight: bold;
 
         &:hover {

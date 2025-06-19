@@ -1,7 +1,7 @@
 @use 'variables';
 
 footer {
-  background: var(--background-color);
+  background: #15042f;
   color: #fff;
   // height: 10vh;
   width: 100vw;
@@ -51,6 +51,11 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    // transition: background-color 4s ease, color 4s ease;
+
+}
+* {
+  transition: background-color 1s ease, color 1s ease;
 }
 
 nav a {

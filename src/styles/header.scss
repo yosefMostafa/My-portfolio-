@@ -7,23 +7,38 @@
   align-items: center;
   justify-content: center;
   display: flex;
-
+  height: auto;
+  
   flex-direction: row;
   background: radial-gradient(
     circle at 75% center,
-    var(--middle-gradiendColor) 0%,
-    var(--background-color) 20%,
+    var( --end-gradiendColor) 0%,
+    var(--middle-gradiendColor) 20%,
     var(--background-color) 100%
   );
-  color: #fff;
+  color: var(--font-color);
   padding: 2rem;
 
   text-align: center;
-
+ button {
+  // align-self: flex-start;
+  // justify-self: flex-end;
+   position: fixed;
+  display: flex;
+  top: 40px;
+  right: 40px;
+  z-index: 1000;
+@media  (max-width: 600px) {
+        top: "20px";
+  right: "40px";
+      }
+ }
   .content {
     position: relative;
     text-align: left;
     width: 50vw;
+      
+
     h1 {
       font-size: 7vw;
       font-weight: 400;
@@ -33,7 +48,7 @@
     span {
       font-size: 1.25rem;
       line-height: 1.6;
-      color: #e0e0e0;
+      color:  var(--font-color);
       margin: 0;
       display: inline-block;
       vertical-align: baseline;
@@ -124,6 +139,7 @@
     );
     width: 100vw;
     padding: 0%;
+    height: auto;
     .img {
       max-width: 100%;
       text-align: center;

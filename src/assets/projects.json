@@ -32,6 +32,35 @@
       }
     ]
   },
+    {
+    "title": "Custom Langing page",
+    "desc": "This is a beautifully designed authentication landing page for a travel-themed application. It features both login and signup flows with a sleek, responsive UI. The design includes a vibrant, global backdrop that showcases famous landmarks, reinforcing the theme of international exploration. The login options include Google OAuth and email/password, while the signup form supports basic user input fields.As the designer and developer, I crafted both the user flow and interface, focusing on an engaging first impression and smooth user experience.",
+    "images": [
+      "./landing page/login.png", 
+      "./landing page/login navigator.png",
+      "./landing page/landing page.png"
+    ],
+    "tech": [
+      "- React  ",
+      "- Bootstrap 5 ",
+      "- React-Bootstrap",
+      "- Google OAuth"
+      
+    ],
+     "links": [
+      {
+        "name": "github",
+        "url": "https://github.com/yosefMostafa/Game-Live",
+        "icon": "./social icons/github.svg"
+      },
+
+      {
+        "name": "google play",
+        "url": "https://play.google.com/store/apps/details?id=gamelive.v1",
+        "icon": "./social icons/play.svg"
+      }
+    ]
+  },
   {
     "title": "GameLive - eSports App",
     "desc": "GameLive is a real-time mobile application built for eSports and gaming enthusiasts. It delivers up-to-date match scores, player stats, and game highlights directly to users, helping them stay connected with their favorite games and tournaments.",
@@ -61,7 +90,7 @@
     ]
   },
   {
-    "title": "Yumx",
+    "title": "Amica - Social Media App",
     "desc": "YumX is a mobile application designed to streamline the food ordering experience in a restaurant-like environment. It allows users to browse menus, place customized orders, and receive real-time updates—all through an intuitive and visually appealing interface.",
     "images": [
       "./yumx/banner.png",
@@ -77,19 +106,26 @@
     ]
   },
   {
-    "title": "Yumx",
-    "desc": "YumX is a mobile application designed to streamline the food ordering experience in a restaurant-like environment. It allows users to browse menus, place customized orders, and receive real-time updates—all through an intuitive and visually appealing interface.",
+    "title": "Runner - Fitness App",
+    "desc": "Runner is the first mobile app I’ve built using React Native. It’s designed to track a runner’s live statistics, including the total miles they've run. The app offers real-time feedback on a map as the user progresses and provides post-run performance summaries. It also includes a motivational feature that fetches quotes dynamically based on random or user-defined keywords to keep runners inspired throughout their journey.",
     "images": [
-      "./yumx/banner.png",
-      "./yumx/chat.jpeg",
-      "./yumx/my orders 2.jpeg"
+      "./runner/map.png",
+      "./runner/qoate.png",
+      "./runner/timer.png"
     ],
     "tech": [
-      "Flutter & Dart ",
-      "MVVM Architecture",
-      "Next.js (API Layer)",
-      "Firebase for push notifications",
+      "React Native",
+      "Expo",
+      "Live GPS/Location Tracking",
+      "RAPID API",
       "RESTful APIs"
+    ],
+    "links": [
+      {
+        "name": "github",
+        "url": "https://github.com/yosefMostafa/Runner",
+        "icon": "./social icons/github.svg"
+      }
     ]
   },
   {
