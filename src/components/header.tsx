@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 export default function Header() {
   const headerText: string = Intro.text;
   const words = headerText.trim().split(" ");
-  const [theme, setThemeState] = useState<'light' | 'dark'>(() => getSavedTheme() || 'light');
+  const [theme, _] = useState<'light' | 'dark'>(() => getSavedTheme() || 'light');
 
   useEffect(() => {
     setTheme(theme);

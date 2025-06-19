@@ -1,6 +1,5 @@
 import myContact from "../assets/my contact.json";
 export default function Footer() {
-  const year = new Date().getFullYear();
   //this contain my formal contact githup linkedin phone number email etc
   return (
     <footer>
