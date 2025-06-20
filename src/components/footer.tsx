@@ -1,5 +1,15 @@
 import myContact from "../assets/my contact.json";
 export default function Footer() {
+  const getLink = (url: string,name:string) => {
+    if (name === "email") {
+      return `https://mail.google.com/mail/?view=cm&to=${url}`;
+    }else if (name === "phone") {
+      return `tel:${url}`;
+    }else if (name === "whatsapp") {
+      return `https://wa.me/${url}`;  
+    }
+    return url;
+  };
   //this contain my formal contact githup linkedin phone number email etc
   return (
     <footer>
@@ -9,7 +19,7 @@ export default function Footer() {
           {myContact.contacts.map((contact, index) => (
             <a
               key={contact.name + index}
-              href={contact.url.includes("@") ? `https://mail.google.com/mail/?view=cm&to=${contact.url}` : contact.url}
+              href={getLink(contact.url,contact.name)}
               target="_blank"
               rel="noopener noreferrer"
             >

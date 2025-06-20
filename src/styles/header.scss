@@ -8,37 +8,34 @@
   justify-content: center;
   display: flex;
   height: auto;
-  
+
   flex-direction: row;
   background: radial-gradient(
     circle at 75% center,
-    var( --end-gradiendColor) 0%,
+    var(--end-gradiendColor) 0%,
     var(--middle-gradiendColor) 20%,
     var(--background-color) 100%
   );
   color: var(--font-color);
-  padding: 2rem;
+  // padding: 2rem;
 
-  text-align: center;
- button {
-  // align-self: flex-start;
-  // justify-self: flex-end;
-   position: fixed;
-  display: flex;
-  top: 40px;
-  right: 40px;
-  z-index: 1000;
-@media  (max-width: 600px) {
-        top: "20px";
-  right: "40px";
-      }
- }
+  button {
+    // align-self: flex-start;
+    // justify-self: flex-end;
+    position: fixed;
+    display: flex;
+    top: 40px;
+    right: 40px;
+    z-index: 1000;
+    @media (max-width: 600px) {
+      top: "20px";
+      right: "40px";
+    }
+  }
   .content {
-    position: relative;
     text-align: left;
+    position: relative;
     width: 50vw;
-      
-
     h1 {
       font-size: 7vw;
       font-weight: 400;
@@ -48,10 +45,11 @@
     span {
       font-size: 1.25rem;
       line-height: 1.6;
-      color:  var(--font-color);
+      color: var(--font-color);
+
       margin: 0;
       display: inline-block;
-      vertical-align: baseline;
+      // vertical-align: baseline;
     }
   }
   .header-image {
@@ -67,29 +65,28 @@
       display: block;
     }
   }
+}
+.header-curve {
+  position: relative;
+  background: transparent;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+  height: 80px;
+  animation: headerFadeInUp 3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  svg {
+    display: block;
 
-  .header-curve {
-    position: absolute;
-    bottom: 0;
-    background-color: var(--header-curve-color);
-    left: 0;
+    fill: var(--background-color);
     width: 100vw;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 1;
     height: 80px;
-    svg {
-      display: block;
-      fill: var(--background-color);
-      width: 100vw;
-      height: 80px;
-      @media  (max-width: 600px) {
-        height: 50px;
-      }
+
+    @media (max-width: 600px) {
+      height: 0px;
     }
   }
 }
-
 @keyframes headerFadeInUp {
   0% {
     opacity: 0;
@@ -130,6 +127,7 @@
 
 @media (max-width: 1080px) {
   .site-header {
+    border: none;
     flex-direction: column-reverse;
     background: radial-gradient(
       circle at 50% center,
@@ -137,19 +135,21 @@
       var(--background-color) 20%,
       var(--background-color) 100%
     );
-    width: 100vw;
     padding: 0%;
     height: auto;
+    display: flex;
+    @media (max-width: 600px) {
+      border-bottom-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+    }
+
     .img {
       max-width: 100%;
-      text-align: center;
     }
 
     .content {
-      text-align: center;
       padding: 1rem;
       width: 80vw;
-
       .span {
         font-size: 1rem;
         line-height: 0;
@@ -157,7 +157,6 @@
         margin: 0;
         width: 100px;
         display: inline-block; // keeps animation per word
-        text-align: center;
       }
     }
   }

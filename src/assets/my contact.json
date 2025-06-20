@@ -11,7 +11,18 @@
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/yosef-el-desoky/",
         "icon": "./social icons/in.svg"
-    }]
+    },
+{
+        "name": "whatsapp",
+        "url": "+201143739597",
+        "icon": "./social icons/whatsapp.svg"
+    },
+    {
+        "name": "phone",
+        "url": "+201143739597",
+        "icon": "./social icons/call.svg"
+    }
+]
    
     
    

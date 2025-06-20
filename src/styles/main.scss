@@ -26,6 +26,18 @@ footer {
       text-decoration: none;
       font-size: 1.2rem;
       margin-top: 0.5rem;
+      img {
+        width: 3rem;
+        height: 3rem;
+        vertical-align: middle;
+         @media (max-width: 600px) {
+          width: 2rem;
+          height: 2rem;
+         }
+      }
+     
+        
+      
       &:hover {
         color: var(--middle-gradiendColor);
       }
@@ -58,11 +70,6 @@ body, html {
   transition: background-color 1s ease, color 1s ease;
 }
 
-nav a {
-  margin-left: 1rem;
-  color: #aad;
-  text-decoration: none;
-  &:hover { color: #fff; }
-}
+
 
 

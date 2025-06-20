@@ -24,19 +24,14 @@
         "name": "linkedin",
         "url": "https://www.linkedin.com/feed/update/urn:li:activity:7337169790559576064/",
         "icon": "./social icons/in.svg"
-      },
-      {
-        "name": "google play",
-        "url": "https://play.google.com/store/apps/details?id=com.yumx.free.text",
-        "icon": "./social icons/play.svg"
       }
     ]
   },
-    {
+  {
     "title": "Custom Langing page",
     "desc": "This is a beautifully designed authentication landing page for a travel-themed application. It features both login and signup flows with a sleek, responsive UI. The design includes a vibrant, global backdrop that showcases famous landmarks, reinforcing the theme of international exploration. The login options include Google OAuth and email/password, while the signup form supports basic user input fields.As the designer and developer, I crafted both the user flow and interface, focusing on an engaging first impression and smooth user experience.",
     "images": [
-      "./landing page/login.png", 
+      "./landing page/login.png",
       "./landing page/login navigator.png",
       "./landing page/landing page.png"
     ],
@@ -45,37 +40,23 @@
       "- Bootstrap 5 ",
       "- React-Bootstrap",
       "- Google OAuth"
-      
-    ],
-     "links": [
-      {
-        "name": "github",
-        "url": "https://github.com/yosefMostafa/Game-Live",
-        "icon": "./social icons/github.svg"
-      },
-
-      {
-        "name": "google play",
-        "url": "https://play.google.com/store/apps/details?id=gamelive.v1",
-        "icon": "./social icons/play.svg"
-      }
     ]
   },
   {
     "title": "GameLive - eSports App",
     "desc": "GameLive is a real-time mobile application built for eSports and gaming enthusiasts. It delivers up-to-date match scores, player stats, and game highlights directly to users, helping them stay connected with their favorite games and tournaments.",
     "images": [
-      "./gamelive/Home Page.PNG", 
+      "./gamelive/Home Page.PNG",
       "./gamelive/Live.PNG",
+      "./gamelive/Live Events.PNG",
       "./gamelive/Upcoming.PNG"
     ],
     "tech": [
       "- Flutter & Dart ",
       "- RESTful APIs",
       "- Streams for state management"
-      
     ],
-     "links": [
+    "links": [
       {
         "name": "github",
         "url": "https://github.com/yosefMostafa/Game-Live",
@@ -93,9 +74,10 @@
     "title": "Amica - Social Media App",
     "desc": "YumX is a mobile application designed to streamline the food ordering experience in a restaurant-like environment. It allows users to browse menus, place customized orders, and receive real-time updates—all through an intuitive and visually appealing interface.",
     "images": [
-      "./yumx/banner.png",
-      "./yumx/chat.jpeg",
-      "./yumx/my orders 2.jpeg"
+      "./Amica/home.png",
+      "./Amica/login.png",
+      "./Amica/relax.png",
+      "./Amica/alarm.png"
     ],
     "tech": [
       "Flutter & Dart ",
@@ -103,16 +85,19 @@
       "Next.js (API Layer)",
       "Firebase for push notifications",
       "RESTful APIs"
+    ],
+    "links": [
+      {
+        "name": "github",
+        "url": "https://github.com/yosefMostafa/Amica",
+        "icon": "./social icons/github.svg"
+      }
     ]
   },
   {
     "title": "Runner - Fitness App",
     "desc": "Runner is the first mobile app I’ve built using React Native. It’s designed to track a runner’s live statistics, including the total miles they've run. The app offers real-time feedback on a map as the user progresses and provides post-run performance summaries. It also includes a motivational feature that fetches quotes dynamically based on random or user-defined keywords to keep runners inspired throughout their journey.",
-    "images": [
-      "./runner/map.png",
-      "./runner/qoate.png",
-      "./runner/timer.png"
-    ],
+    "images": ["./runner/map.png", "./runner/qoate.png", "./runner/timer.png"],
     "tech": [
       "React Native",
       "Expo",
@@ -129,19 +114,21 @@
     ]
   },
   {
-    "title": "Yumx",
-    "desc": "YumX is a mobile application designed to streamline the food ordering experience in a restaurant-like environment. It allows users to browse menus, place customized orders, and receive real-time updates—all through an intuitive and visually appealing interface.",
+    "title": "EnergyStat – Energy Data Management & Analytics Web App",
+    "desc": "EnergyStat is a full-stack web application built to manage and analyze energy consumption data for companies. The system provides structured input forms for energy usage records and delivers powerful statistical reports and interactive visualizations.The backend was designed to handle complex relationships between different types of energy sources (e.g., lighting, motors) and summarize them into monthly and yearly aggregates. This allows companies to monitor, compare, and optimize energy use efficiently.",
     "images": [
-      "./yumx/banner.png",
-      "./yumx/chat.jpeg",
-      "./yumx/my orders 2.jpeg"
+      "./Energy managment/reports.png",
+      "./Energy managment/add.png",
+      "./Energy managment/backend.png",
+      "./Energy managment/graphs.png"
     ],
-    "tech": [
-      "Flutter & Dart ",
-      "MVVM Architecture",
-      "Next.js (API Layer)",
-      "Firebase for push notifications",
-      "RESTful APIs"
+    "tech": ["REST API using flask", "Database: MySQL", "Flutter & Dart"],
+    "links": [
+      {
+        "name": "github",
+        "url": "https://github.com/yosefMostafa/Energy-Managment-web-App",
+        "icon": "./social icons/github.svg"
+      }
     ]
   }
 ]

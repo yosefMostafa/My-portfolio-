@@ -33,13 +33,14 @@ export default function Header() {
           <img src={"coding.png"} alt="Laptop with code and coffee" />
         </div>
 
-        <div className="header-curve">
+       
+     
+      </header>
+       <div className="header-curve">
           <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
             <path d="M0,100 C480,0 960,0 1440,100 L1440,0 L0,0 Z" />
           </svg>
         </div>
-     
-      </header>
     </>
   );
 }
