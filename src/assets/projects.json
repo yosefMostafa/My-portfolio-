@@ -28,7 +28,7 @@
     ]
   },
   {
-    "title": "Custom Langing page",
+    "title": "Custom Landing page",
     "desc": "This is a beautifully designed authentication landing page for a travel-themed application. It features both login and signup flows with a sleek, responsive UI. The design includes a vibrant, global backdrop that showcases famous landmarks, reinforcing the theme of international exploration. The login options include Google OAuth and email/password, while the signup form supports basic user input fields.As the designer and developer, I crafted both the user flow and interface, focusing on an engaging first impression and smooth user experience.",
     "images": [
       "./landing page/login.png",
