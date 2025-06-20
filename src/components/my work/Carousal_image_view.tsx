@@ -3,26 +3,35 @@ import "../../styles/carousal.scss";
 import ImageModalCustom from "./image_modal";
 type CarousalViewProps = {
   images: string[];
-  animate?: boolean; // Optional prop to control animation
+  animate?: boolean;
+  className?: string;
+  initialIndex?: number;
+  disableModal?: boolean; // Optional prop to disable modal
 };
 const AUTO_SCROLL_INTERVAL = 3000; // 3 seconds
 
-const CarousalView = ({ images, animate }: CarousalViewProps) => {
-  const [index, setIndex] = useState(0);
+const CarousalView = ({
+  images,
+  animate,
+  className,
+  initialIndex = 0,
+  disableModal = false,
+}: CarousalViewProps) => {
+  const [index, setIndex] = useState(initialIndex);
   const [slideClass, setSlideClass] = useState("");
-  const [modalImage, setModalImage] = useState<string>("");
+  const [modalImageIndx, setModalImageIndex] = useState<number>(initialIndex);
   const touchStartX = useRef<number | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
 
   const prevIndex = (index - 1 + images.length) % images.length;
   const nextIndex = (index + 1) % images.length;
   useEffect(() => {
-      if(!animate) return;
+    if (!animate) return;
     slideTo(nextIndex, "right");
-  },[animate])
+  }, [animate]);
   useEffect(() => {
-    if(!animate) return;
-     // If animation is not enabled, skip the auto-scroll
+    if (!animate) return;
+    // If animation is not enabled, skip the auto-scroll
     const timer = setInterval(() => {
       slideTo(nextIndex, "right");
     }, AUTO_SCROLL_INTERVAL);
@@ -68,7 +77,7 @@ const CarousalView = ({ images, animate }: CarousalViewProps) => {
   return (
     <>
       <div
-        className="carousel-preview-wrapper"
+        className={className ? className : "carousel-preview-wrapper"}
         tabIndex={0}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
@@ -85,8 +94,9 @@ const CarousalView = ({ images, animate }: CarousalViewProps) => {
           className={`carousel-main  ${slideClass}`}
           onClick={() => {
             setModalOpen(true);
+            //rearrange the images so that image of index to be the first image without changing the order
 
-            setModalImage(images[index]); // Set the image to be displayed in the modal
+            setModalImageIndex(index); // Set the image to be displayed in the modal
           }}
           style={{ cursor: "pointer" }}
         />
@@ -96,11 +106,14 @@ const CarousalView = ({ images, animate }: CarousalViewProps) => {
           className="carousel-preview next"
           onClick={() => slideTo(nextIndex, "right")}
         />
-        <ImageModalCustom
-          imageUrl={modalImage}
-          open={modalOpen}
-          onClose={() => setModalOpen(false)}
-        />
+        {disableModal ? null : (
+          <ImageModalCustom
+            imageUrl={[...images]}
+            open={modalOpen}
+            initialIndex={modalImageIndx}
+            onClose={() => setModalOpen(false)}
+          />
+        )}
       </div>
     </>
   );

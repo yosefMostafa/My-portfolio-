@@ -2,8 +2,12 @@
 .modal-backdrop {
   position: fixed;
 
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.7);
   width: 80vw;
   height: 80vh;
   display: flex;
@@ -11,29 +15,51 @@
   align-self: center;
   justify-self: center;
   justify-content: center;
-  border-radius: 1REM;
+  border-radius: 1rem;
   z-index: 9999;
 }
 
 .modal-content {
-   background: #fff;
+  background: transparent;
   border-radius: 1rem;
   padding: 1rem;
-  max-width: 90vw;
-  max-height: 90vh;
+  min-width: 90%;
+  max-height:80%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .close-button {
-  position: absolute;  
+  position: absolute;
   top: 1rem;
   right: 1rem;
-  background: transparent;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
   border: none;
-  font-size: 2rem;
-  color: #fff;
+  border-radius: 50%;
+  background-color: #f1f1f1; // light gray for a soft modern look
+  color: #333;               // dark but not pure black
+  font-size: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #e0e0e0; // slightly darker on hover
+    color: #000;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
 .modal-content img {
   max-width: 80vw;

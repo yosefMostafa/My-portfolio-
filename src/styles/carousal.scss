@@ -2,24 +2,30 @@
   display: flex;
   gap: 0.5rem;
   overflow: hidden;
-  align-items: center   ;
+  align-items: center;
   justify-content: center;
   height: 200px;
   width: 100%;
-    position: relative;
-
+  position: relative;
+}
+.carousel-preview-wrapper-large {
+  display: flex;
+  gap: 0.5rem;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
 }
 
 .carousel-main {
-    position: relative;
+  position: relative;
   width: 75%;
   height: 100%;
   object-fit: scale-down;
-//   transform: translateX(-50%);
-  transition: transform 0.5s cubic-bezier(.77,0,.18,1), opacity 0.5s;
+  //   transform: translateX(-50%);
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.5s;
   opacity: 1;
-
-  
 }
 .carousel-main.slide-out-left {
   transform: translateX(-150%);
@@ -32,24 +38,21 @@
 }
 
 .carousel-main.slide-in {
-
   opacity: 1;
 }
 .carousel-main.fade-out {
   opacity: 0;
 }
 .carousel-preview {
-
   width: 12.5%;
   height: 70%;
   object-fit: cover;
   border-radius: 0.5rem;
   opacity: 0.6;
   cursor: pointer;
-//   filter: blur(1px) grayscale(0.3);
+  //   filter: blur(1px) grayscale(0.3);
   transition: opacity 1s;
   z-index: 1;
- 
 }
 
 .carousel-preview:hover {

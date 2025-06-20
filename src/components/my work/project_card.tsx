@@ -11,6 +11,7 @@ const ProjectCard = (project: ProjectInterface, key: number) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
+        
         {project.images && <CarousalView images={project.images} animate={isHovered} />}
         <h3>{project.title}</h3>
         <p>{project.desc}</p>
